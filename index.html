@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | Jamie Han</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Jamie Han</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="case-studies.html">Case Studies</a></li>
+        <li><a href="design-work.html">Design Work</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="experiments.html">Experiments</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <hello-world></hello-world>
+    <h2>A UCSD student aspiring to be a <i>UX/UI designer.</i></h2>
+
+    <section>
+      <h3>About Me</h3>
+      <p>Hi, my name is Jamie Han. I am a student at UCSD studying Cognitive Science with a specialization in Human Computer Interaction.</p>
+      <p>Currently a UX/UI intern @ Data Science Alliance, a food enthusiast, and a video editor hobbyist <em>really passionate</em> about rhythm based editing.</p>
+    </section>
+
+    <section>
+      <h3>Tools I Use</h3>
+      <ul>
+        <li>Figma</li>
+        <li>Adobe Creative Suite</li>
+        <li>TypeScript</li>
+        <li>React</li>
+        <li>GitHub</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Featured Project</h3>
+      <p>Cosmo Connect is a platform for career exploration and mentorship. <a href="project-1.html">Read the full case study.</a></p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>UC San Diego<br>Expected Graduation: Spring 2027</p>
+    <p>&copy; 2026 Jamie Han</p>
+  </footer>
+    <script>
+        class HelloWorld extends HTMLElement {
+        connectedCallback() {
+            console.log("Hello World!");
+        }
+        }
+        customElements.define("hello-world", HelloWorld);
+    </script>
+</body>
+</html>
